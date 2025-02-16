@@ -2,3 +2,72 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --page-background: url("../images/cover-image-dark.png");
+
+  --main-color: #000028;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
+
+  --title-decor-color: #000028;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --contrast-color: var(--accent-color);
+
+  --decoration-border: 1px solid var(--contrast-color);
+
+  --button-disabled-outline: 1px solid var(--contrast-color);
+  --button-hover-outline: 1px solid var(--button-hover);
+  --button-focus-border:  0  1px 0 0 var(--contrast-color);
+  
+
+  --link-border: 0  1px 0 0 var(--text-color);
+  --link-outline: 1px solid var(--text-color);
+
+
+  --text-shadow: 4px 4px 0 var(--accent-color);
+  --text-shadow-footer: 2px 2px 0 var(--accent-color);
+  --link-shadow: 1px 2px 0 var(--accent-color);
+  --lamp-shadow: 0px 0px 4px 2px var(--accent-color);
+
+  --main-font: "IBM Plex mono";
+
+  --text-font-size: 18px;
+  --text-line-height: 130%;
+
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-line-height: 82.5%;
+
+  --title-weight: bold;
+  --describtion-weight: bold;
+
+  --padding: 10px;
+  --main-padding-block: 40px;
+  --main-padding-inline: var(--padding);
+  --main-gap: 50px;
+  --section-gap: 20px;
+  --paragraph-gap: 10px;
+  --gallery-gap: 10px;
+
+  --button-padding: 13px;
+  --menu-gap: 10px;
+  --lamp-gap: 10px;
+
+  --min-block-size-button: 26px;
+}
+
+@media (width>=768px) {
+  :root {
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --padding: 20px;
+    --main-padding-block: 60px;
+    --section-gap: 20px;
+    --paragraph-gap: 10px;
+    --main-gap: 80px;
+    --gallery-gap: 20px;
+  }
+}
+
+/* @media (width>=1024px) {
+ 
+} */
