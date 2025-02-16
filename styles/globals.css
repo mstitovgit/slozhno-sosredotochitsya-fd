@@ -45,11 +45,11 @@ a {
   text-decoration: none;
 }
 
-a:focus{
+a:focus {
   outline: none;
 }
 
-button{
+button {
   border: none;
   background-color: transparent;
 }
