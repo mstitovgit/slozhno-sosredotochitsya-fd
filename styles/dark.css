@@ -16,6 +16,7 @@
   --title-color: #db00ff;
   --text-color: #f1b2ce;
 
+  --title-decor-color: #000028;
   --button-hover: rgba(255, 0, 112, 0.4);
   --contrast-color: var(--accent-color);
 }
@@ -23,3 +24,7 @@
 /* .theme-dark .page {
   Вам также нужно будет написать ряд подобных селекторов
 } */
+
+.theme-dark .header__lamp {
+  display: flex;
+}

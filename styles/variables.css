@@ -11,6 +11,7 @@
   --text-color: #f1b2ce;
 
   --title-decor-color: #000028;
+
   --button-hover: rgba(255, 0, 112, 0.4);
   --contrast-color: var(--accent-color);
 
@@ -18,12 +19,10 @@
 
   --button-disabled-outline: 1px solid var(--contrast-color);
   --button-hover-outline: 1px solid var(--button-hover);
-  --button-focus-border:  0  1px 0 0 var(--contrast-color);
-  
+  --button-focus-border: 0 1px 0 0 var(--contrast-color);
 
-  --link-border: 0  1px 0 0 var(--text-color);
+  --link-border: 0 1px 0 0 var(--text-color);
   --link-outline: 1px solid var(--text-color);
-
 
   --text-shadow: 4px 4px 0 var(--accent-color);
   --text-shadow-footer: 2px 2px 0 var(--accent-color);

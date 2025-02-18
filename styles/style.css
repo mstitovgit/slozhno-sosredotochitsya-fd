@@ -39,6 +39,7 @@ a:focus-visible {
 .decorated-zone {
   inline-size: 100%;
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone::before,
@@ -168,17 +169,10 @@ a:focus-visible {
 
 @media (width >=1024px) {
   .header__theme-menu {
-    grid-column: 1/-1;
     place-self: start center;
   }
   .header__theme-menu-list {
     flex-direction: row;
-  }
-  .header__title {
-    grid-column: 1/-1;
-  }
-  .header__describtion {
-    grid-column: 2;
   }
 }
 
@@ -197,6 +191,11 @@ main {
   gap: var(--section-gap);
 }
 
+.section__text {
+  display: grid;
+  gap: var(--section-gap);
+}
+
 .paragraph__wrapper {
   display: flex;
   flex-direction: column;
@@ -210,6 +209,7 @@ main {
 
 .paragraph__title {
   font-size: var(--text-font-size);
+  inline-size: 100%;
 }
 
 .paragraph__subtitle {
@@ -229,29 +229,18 @@ main {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section:nth-child(1) .section__title {
+  .horizontal-layout .section__title {
     grid-column: 1;
-    grid-row: span 2;
   }
-  .section:nth-child(1) .paragraph__wrapper {
+  .horizontal-layout .section__text {
     grid-column: 2;
   }
 
-  .section:nth-child(2) .section__title {
+  .vertical-layout .section__title {
     grid-column: 1;
   }
-  .section:nth-child(2) .paragraph__wrapper {
+  .vertical-layout .section__text {
     grid-column: 1/-1;
-  }
-
-  .section:nth-child(3) .section__title {
-    grid-column: 1;
-    grid-row: span 5;
-  }
-
-  .section:nth-child(3) .paragraph__wrapper,
-  .paragraph__title {
-    grid-column: 2;
   }
 }
 
@@ -260,29 +249,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .section:nth-child(1) .section__title {
-    grid-column: 1;
-  }
-  .section:nth-child(1) .paragraph__wrapper {
+  .horizontal-layout .section__text {
     grid-column: 2/4;
   }
 
-  .section:nth-child(2) .section__title {
-    grid-column: 1;
-  }
-
-  .section:nth-child(2) .paragraph__wrapper {
-    grid-column: span 1;
-    grid-row: 2;
-  }
-
-  .section:nth-child(3) .section__title {
-    grid-column: 1;
-  }
-
-  .section:nth-child(3) .paragraph__wrapper,
-  .paragraph__title {
-    grid-column: 2/4;
+  .vertical-layout .section__text {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -326,7 +298,6 @@ main {
     grid-row: 4;
   }
 }
-
 
 /* FOOTER */
 
