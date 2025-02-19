@@ -229,17 +229,21 @@ main {
     grid-template-columns: 1fr 2fr;
   }
 
-  .horizontal-layout .section__title {
+  .hard-to-concentrate .section__title,
+  .concentrate-advice .section__title {
     grid-column: 1;
   }
-  .horizontal-layout .section__text {
+
+  .hard-to-concentrate .section__text,
+  .concentrate-advice .section__text {
     grid-column: 2;
   }
 
-  .vertical-layout .section__title {
+  .concentrate-reducers .section__title {
     grid-column: 1;
   }
-  .vertical-layout .section__text {
+
+  .concentrate-reducers .section__text {
     grid-column: 1/-1;
   }
 }
@@ -249,11 +253,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .horizontal-layout .section__text {
+  .hard-to-concentrate .section__text,
+  .concentrate-advice .section__text {
     grid-column: 2/4;
   }
 
-  .vertical-layout .section__text {
+  .concentrate-reducers .section__text {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
